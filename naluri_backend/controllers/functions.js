@@ -1,11 +1,11 @@
 // function to calculate the Pi value
-const calculatePI = async (PI, n, sign) => {
+const calculatePI = async (PI, n, one) => {
    // The number of iteratios is set to 1000000 for better accuracy
    for (let i = 0; i <= 1000000; i++) {
     PI = PI + (sign * (4 / ((n) * (n + 1) * (n + 2))));
     
-    // multiply the sign by -1 on each iteration
-    sign = sign * (-1);
+    // multiply one by -1 on each iteration
+    one = one * (-1);
 
     // Increase n by 2 based on the formula
     n += 2;
