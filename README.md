@@ -33,11 +33,19 @@ we’d like to calculate the circumference of the sun.
 ```
 npm install
 ```
-3. The frontend service is started using the following command: 
+3. Enter the following command to install axios to the frontend: 
+```
+npm install axios
+```
+4. Enter the following command to install Material UI to the frontend:
+```
+npm install @mui/material @emotion/react @emotion/styled
+```
+5. The frontend service is started using the following command: 
 ```
 npm start
 ```
-4. The backend service is started using the following command: 
+6. The backend service is started using the following command: 
 ```
 node index.js
 ```
