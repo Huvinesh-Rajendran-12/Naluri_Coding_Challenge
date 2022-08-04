@@ -11,6 +11,11 @@ we’d like to calculate the circumference of the sun.
       the most accurate value <br>
   c. When the server is queried via an HTTP GET request, it will respond with the
       most accurate value that the server has calculated <br>
+
 2. Create a webapp that displays <br>
   a. The servers’ current known value of Pi <br>
   b. The circumference of the sun <br>
+  
+## The Approach 
+
+1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known formula 
