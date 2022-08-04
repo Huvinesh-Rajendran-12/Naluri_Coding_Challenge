@@ -20,6 +20,12 @@ we’d like to calculate the circumference of the sun.
 
 1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known famous formula is the Ramanujan and Chudnovsky algorithm. The reason why the Nilakantha formula was chosen is because it has a lower time complexity, $O(N)$, to the Ramanujan and Chudnovsky algorithm $O(N^2)$. <br>
 2. Nilakantha formula : $$\pi = 3 + 4 \cdot \displaystyle\sum_{n \geq 0} \frac{(-1)^n}{(2n+3)^3-(2n+3)}$$
+3. Some rules were followed to implement this algorithm and those are as follows: <br>
+    i. The total iteration is set to 1000000, because the higher the number of iterations the higher the precision. <br>
+    ii. Three variables are created which are _sum_, _n_, and _one_. <br>
+    iii. _sum_ will be set to 3, _n_ will be set to 2, _one_ will be set to 1.
+    iii. During each iteration, _n_ will be increased by 2 and _one_ will be added by the multiplication of _one_ and -1. <br>
+    iv. The _sum_ will be returned at the end of the iteration.
 
 ## The usage 
 1. This repository consists of two folders which are the naluri_frontend and naluri_backend folders. The naluri_frontend folder consists of the frontend service of the application meanwhile the naluri_backend folder consist of the backend service of the application. 
