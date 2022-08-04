@@ -49,4 +49,5 @@ npm start
 ```
 node index.js
 ```
-
+## Future Improvements
+In the near future, better algorithms such as the Chudnovsky algorithm with a higher rate of convergence can be used to calculate the PI value. 
