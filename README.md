@@ -18,7 +18,7 @@ we’d like to calculate the circumference of the sun.
   
 ## The Approach 
 
-1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known famous formula is the Ramanujan formula. The reason why the Nilakantha formula was chosen is because it has a lower time complexity, $O(N)$, to the Ramanujan formula $O(N^2)$. <br>
+1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known famous formula is the Ramanujan and Chudnovsky algorithm. The reason why the Nilakantha formula was chosen is because it has a lower time complexity, $O(N)$, to the Ramanujan and Chudnovsky algorithm $O(N^2)$. <br>
 2. Nilakantha formula : $$\pi = 3 + 4 \cdot \displaystyle\sum_{n \geq 0} \frac{(-1)^n}{(2n+3)^3-(2n+3)}$$
 
 ## The usage 
