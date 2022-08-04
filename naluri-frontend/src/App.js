@@ -20,7 +20,6 @@ const Background = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
   backgroundColor: '#282c34',
   backgroundImage: `url(${stars})`,
-  padding: theme.spacing(3),
   rowGap: theme.spacing(5),
 })
 );
@@ -28,19 +27,14 @@ const Information = styled(Card)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   height: 200,
-  backgroundColor: '#101010',
+  backgroundColor: '#181818',
   padding: theme.spacing(3),
   boxShadow: 4,
   shadowColor: '#000',
+  alignItems: 'center',
   justifyContent: 'center',
 })
 );
-const Sun = styled(Box)(({ theme }) => ({
-  backgroundImage: `url(${sun})`,
-  height: '50vmin',
-  width: '50vmin',
-  animation: 'spin 20s linear infinite',
-}));
 
 function App() {
   const [data, setData] = useState({
@@ -60,29 +54,32 @@ function App() {
       <Box sx={{  textAlign: 'center'  }}>
         <img src={sun} className="sun" alt="logo" />
       </Box>
-      {/* <Sun /> */}
-      <Grid container spacing={2} sx={{ justifyContent: 'center' }} >
-        <Grid item xs={12} sm={6} md={4} sx={{ flexDirection: 'row' }}>
-          <Information>
-            <Typography variant="h5" component="h2" gutterBottom color='gray'>
-              Value of PI :
-              {' '}
-              {data.pi}
-            </Typography>
-          </Information>
+      <Grid container spacing={2} sx={{ justifyContent: 'center', paddingTop: 2 }} >
+        <Grid item xs={12} sm={12} md={6} lg={4}  >
+          <Box sx={{ boxShadow: 10 }}>
+            <Information>
+              <Typography variant="h5" component="h2" gutterBottom color='gray'>
+                Value of PI :
+                {'  '}
+                {data.pi ? data.pi : 0.0}
+              </Typography>
+            </Information>
+          </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Information>
-            <Typography variant="h5" component="h2" gutterBottom color='gray'>
-              Circumference of the sun :
-            </Typography>
-            <Typography variant="body1" component="h2" gutterBottom color='gray'>
-              {data.circumference}
-            </Typography>
-          </Information>
+        <Grid item xs={12} sm={12} md={6} lg={4} >
+          <Box sx={{ boxShadow: 10 }}>
+            <Information>
+              <Typography variant="h5" component="h2" gutterBottom color='gray'>
+                Circumference of the sun :
+                {' '}
+                {data.circumference ? data.circumference : 0}
+                {' '}
+                km
+              </Typography>
+            </Information>
+          </Box>
         </Grid>
       </Grid>
-      <div></div>
     </Background>
   );
 }
