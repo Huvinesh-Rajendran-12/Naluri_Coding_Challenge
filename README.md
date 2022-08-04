@@ -18,6 +18,21 @@ we’d like to calculate the circumference of the sun.
   
 ## The Approach 
 
-1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known famous formula is the Ramanujan formula. The reason why the Nilakantha formula was chosen is because it has a lower time complexity( O( N logN loglogN) to the Ramanujan formula ( O( N^2 logN loglogN). <br>
-2. Nilakantha formula : $$ \pi $$
-4. 
+1. One of the main know formulas among others to calculate Pi is the Nilakantha's formula. The other known famous formula is the Ramanujan formula. The reason why the Nilakantha formula was chosen is because it has a lower time complexity, $O(N)$, to the Ramanujan formula $O(N^2)$. <br>
+2. Nilakantha formula : $$\pi = 3 + 4 \cdot \displaystyle\sum_{n \geq 0} \frac{(-1)^n}{(2n+3)^3-(2n+3)}$$
+
+## The usage 
+1. This repository consists of two folders which are the naluri_frontend and naluri_backend folders. The naluri_frontend folder consists of the frontend service of the application meanwhile the naluri_backend folder consist of the backend service of the application. 
+2. Go to each respective folders and install the required modules by entering the following command:
+```
+npm install
+```
+3. The frontend service is started using the following command: 
+```
+npm start
+```
+4. The backend service is started using the following command: 
+```
+node index.js
+```
+
