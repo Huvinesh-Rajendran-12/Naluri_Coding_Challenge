@@ -23,9 +23,9 @@ we’d like to calculate the circumference of the sun.
 3. Some rules were followed to implement this algorithm and those are as follows: <br>
     i. The total iteration is set to 1000000, because the higher the number of iterations the higher the precision. <br>
     ii. Three variables are created which are _sum_, _n_, and _one_. <br>
-    iii. _sum_ will be set to 3, _n_ will be set to 2, _one_ will be set to 1.
-    iii. During each iteration, _n_ will be increased by 2 and _one_ will be added by the multiplication of _one_ and -1. <br>
-    iv. The _sum_ will be returned at the end of the iteration.
+    iii. _sum_ will be set to 3, _n_ will be set to 2, _one_ will be set to 1. <br>
+    iv. During each iteration, _n_ will be increased by 2 and _one_ will be added by the multiplication of _one_ and -1. <br>
+    v. The _sum_ will be returned at the end of the iteration.
 
 ## The usage 
 1. This repository consists of two folders which are the naluri_frontend and naluri_backend folders. The naluri_frontend folder consists of the frontend service of the application meanwhile the naluri_backend folder consist of the backend service of the application. 
